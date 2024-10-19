@@ -43,4 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
             document.body.classList.remove("modal-open"); // Re-enable body scroll
         }
     });
+});app.post('/your-endpoint', (req, res) => {
+    // Handle form submission here
 });
+
